@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cek Status Baterai 🔋</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Cek Status Baterai 🔋</h1>
+
+  <input type="number" id="inputBaterai" placeholder="Masukkan % baterai" />
+  <button onclick="cekBaterai()">Cek</button>
+  <button onclick="startCharging()">⚡ Charge!</button>
+  <button onclick="toggleDarkMode()">🌙  Dark Mode</button>
+
+
+  <div class="battery-container">
+    <div class="battery-level" id="batteryLevel">0%</div>
+    <div class="battery-tip"></div>
+  </div>
+
+  <div id="hasil"></div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>

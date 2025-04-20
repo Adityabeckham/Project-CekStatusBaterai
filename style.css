@@ -1,0 +1,107 @@
+/* Default light mode styles */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f4f4f4;
+    color: #333;
+    transition: background 0.3s ease, color 0.3s ease;
+  }
+  
+  h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  
+  input, button {
+    padding: 12px;
+    font-size: 16px;
+    margin: 5px;
+    width: 100%;
+    max-width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .battery-container {
+    width: 100%;
+    max-width: 300px;
+    height: 40px;
+    border: 2px solid #333;
+    margin: 20px auto;
+    position: relative;
+    background-color: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  .battery-level {
+    height: 100%;
+    width: 0%;
+    background-color: green;
+    text-align: right;
+    padding-right: 10px;
+    line-height: 40px;
+    color: white;
+    font-weight: bold;
+    transition: width 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  }
+  
+  .battery-tip {
+    width: 10px;
+    height: 20px;
+    background-color: #333;
+    position: absolute;
+    right: -12px;
+    top: 10px;
+    border-radius: 2px;
+  }
+  
+  #hasil {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+  
+  @media (max-width: 480px) {
+    h1 { font-size: 20px; }
+    input, button { font-size: 14px; }
+    .battery-level { font-size: 14px; padding-right: 5px; }
+    #hasil { font-size: 16px; }
+  }
+  
+  /* Dark mode styles */
+  body.dark {
+    background-color: #111;
+    color: #eee;
+  }
+  
+  body.dark input, body.dark button {
+    background-color: #333;
+    color: #eee;
+    border-color: #555;
+  }
+  
+  body.dark .battery-container {
+    background-color: #333;
+    border-color: #444;
+  }
+  
+  body.dark .battery-level {
+    background-color: #44c767;
+  }
+  
+  body.dark button {
+    background-color: #007bff;
+  }
+  
+  body.dark #hasil {
+    color: #ddd;
+  }
