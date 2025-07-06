@@ -36,4 +36,5 @@ A simple, interactive, and responsive web application to check and visualize you
 1. Clone the repository:
 
 ```bash
+gh repo clone Adityabeckham/Project-CekStatusBaterai
 
